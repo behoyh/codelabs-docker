@@ -24,4 +24,4 @@ Dockerize all the things! See [my blog](https://beshoyhanna.com/posts/BZf9BgGStH
 
 ## Behold
 
-@ http://localhost:6464
+@ http://127.0.0.1:6464
