@@ -1,8 +1,12 @@
 # codelabs-docker
 
-Google Codelabs for the Nat-ted and Firewalled dev. Technical documention using Markdown for your internal team, BYOCO (Bring Your Own Container Orchestration).
+Google Codelabs for the NAT-ed and firewalled dev. Technical documention using Markdown for your internal team, BYOCO (Bring Your Own Container Orchestration).
 Dockerize all the things! See [my blog](https://beshoyhanna.com/posts/BZf9BgGStHqUzavaWdtD) for motivation behind this repo.
 
+### Prereqs
+
+* [Docker](https://www.docker.com/products/docker-desktop) 
+* [Git](https://git-scm.com/downloads) 
 
 ## Clone
 
