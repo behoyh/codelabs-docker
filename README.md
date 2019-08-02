@@ -10,6 +10,7 @@ Dockerize all the things! See [my blog](https://beshoyhanna.com/posts/BZf9BgGStH
 
 ## Build
 
+`cd codelabs-docker`
 `docker build -t behoyh/codelabs:0.0.5  .`
 
 
