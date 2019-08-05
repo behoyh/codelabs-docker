@@ -6,7 +6,7 @@ COPY ./codelabs /codelabs-html
 
 WORKDIR /codelabs-html
 
-RUN claat export -auth "4/lgFyyZF0wF_T2PuJ09hqcNffcbvcJAmxOo2Ntnpz5zIIBeoibUncQXs" how-to-write-a-codelab.md
+RUN find /codelabs-html/*.md | xargs claat export -auth "4/lgFyyZF0wF_T2PuJ09hqcNffcbvcJAmxOo2Ntnpz5zIIBeoibUncQXs"
 
 FROM node as node
 
