@@ -3,6 +3,9 @@
 Google Codelabs for the NAT-ed and firewalled dev. Technical documention using Markdown for your internal team, BYOCO (Bring Your Own Container Orchestration).
 Dockerize all the things! See [my blog](https://beshoyhanna.com/posts/BZf9BgGStHqUzavaWdtD) for motivation behind this repo.
 
+[![Run on Google Cloud](https://storage.googleapis.com/cloudrun/button.svg)](https://console.cloud.google.com/cloudshell/editor?shellonly=true&cloudshell_image=gcr.io/cloudrun/button&cloudshell_git_repo=https://github.com/behoyh/codelabs-docker.git)
+
+
 ### Prereqs
 
 * [Docker](https://www.docker.com/products/docker-desktop) 
