@@ -6,7 +6,9 @@ COPY ./codelabs /codelabs-html
 
 WORKDIR /codelabs-html
 
-RUN find /codelabs-html/*.md | xargs claat export -auth "4/lgFyyZF0wF_T2PuJ09hqcNffcbvcJAmxOo2Ntnpz5zIIBeoibUncQXs"
+RUN CODE_LABS=$(find /codelabs-html/*.md) 
+
+RUN for filename in $CODE_LABS; do claat export $filename; done
 
 FROM node as node
 
