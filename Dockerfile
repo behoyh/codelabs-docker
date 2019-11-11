@@ -6,9 +6,7 @@ COPY ./codelabs /codelabs-html
 
 WORKDIR /codelabs-html
 
-RUN CODE_LABS=$(find /codelabs-html/*.md) 
-
-RUN for filename in $CODE_LABS; do claat export $filename; done
+RUN for filename in *.md; do echo "Importing $filename: "; claat export "$filename"; done
 
 FROM node as node
 
