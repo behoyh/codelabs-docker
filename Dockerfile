@@ -1,6 +1,6 @@
 FROM golang AS claat
 
-RUN go get github.com/googlecodelabs/tools/claat
+RUN go install github.com/googlecodelabs/tools/claat@latest
 
 COPY ./codelabs /codelabs-html
 
