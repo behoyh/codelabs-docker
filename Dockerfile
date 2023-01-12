@@ -8,7 +8,7 @@ WORKDIR /codelabs-html
 
 RUN for filename in *.md; do echo "Importing $filename: "; claat export "$filename"; done
 
-FROM node as node
+FROM node:14 as node
 
 RUN mkdir /www
 WORKDIR /www
@@ -18,7 +18,7 @@ WORKDIR /www/tools/site
 
 COPY --from=claat /codelabs-html /www/tools/site/codelabs-html
 
-RUN npm install -g gulp-cli
+RUN npm install -g gulp
 RUN npm install
 
 RUN [ "gulp", "dist", "--codelabs-dir=codelabs-html" ]
